@@ -2,13 +2,14 @@ package com.google.ar.sceneform;
 
 import android.content.Context;
 import android.media.Image;
-
-import android.support.annotation.Nullable;
-import android.support.annotation.UiThread;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.UiThread;
+
 import com.google.ar.core.Anchor;
 import com.google.ar.core.CameraConfig.FacingDirection;
 import com.google.ar.core.Config;
@@ -18,23 +19,20 @@ import com.google.ar.core.LightEstimate;
 import com.google.ar.core.Pose;
 import com.google.ar.core.Session;
 import com.google.ar.core.TrackingState;
-
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.ar.core.exceptions.FatalException;
-
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.CameraStream;
 import com.google.ar.sceneform.rendering.Color;
 import com.google.ar.sceneform.rendering.EnvironmentalHdrLightEstimate;
 import com.google.ar.sceneform.rendering.GLHelper;
-
 import com.google.ar.sceneform.rendering.PlaneRenderer;
-
 import com.google.ar.sceneform.rendering.Renderer;
 import com.google.ar.sceneform.rendering.ThreadPools;
 import com.google.ar.sceneform.utilities.AndroidPreconditions;
 import com.google.ar.sceneform.utilities.ArCoreVersion;
 import com.google.ar.sceneform.utilities.Preconditions;
+
 import java.lang.ref.WeakReference;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
@@ -56,7 +54,8 @@ public class ArSceneView extends SceneView {
   private static final float RECREATE_LIGHTING_ANCHOR_DISTANCE = 0.5f;
 
   private int cameraTextureId;
-  @Nullable private Session session;
+  @Nullable
+  private Session session;
   @Nullable private Frame currentFrame;
   @Nullable private Config cachedConfig;
   private int minArCoreVersionCode;

@@ -1,11 +1,12 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.MaterialInstance;
 import com.google.android.filament.TextureSampler;
-
 import com.google.ar.core.annotations.UsedByNative;
 import com.google.ar.sceneform.math.Vector3;
+
 import java.util.HashMap;
 
 /** Material property store. */

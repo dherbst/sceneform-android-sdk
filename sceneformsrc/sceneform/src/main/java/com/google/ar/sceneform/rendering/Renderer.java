@@ -2,11 +2,13 @@ package com.google.ar.sceneform.rendering;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.annotation.VisibleForTesting;
 import android.view.Surface;
 import android.view.SurfaceView;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.VisibleForTesting;
+
 import com.google.android.filament.Camera;
 import com.google.android.filament.Entity;
 import com.google.android.filament.IndirectLight;
@@ -16,10 +18,10 @@ import com.google.android.filament.TransformManager;
 import com.google.android.filament.View.DynamicResolutionOptions;
 import com.google.android.filament.Viewport;
 import com.google.android.filament.android.UiHelper;
-
 import com.google.ar.sceneform.utilities.AndroidPreconditions;
 import com.google.ar.sceneform.utilities.EnvironmentalHdrParameters;
 import com.google.ar.sceneform.utilities.Preconditions;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -49,7 +51,8 @@ public class Renderer implements UiHelper.RendererCallback {
   // Limit resolution to 1080p for the minor edge. This is enough for Filament.
   private static final int MAXIMUM_RESOLUTION = 1080;
 
-  @Nullable private CameraProvider cameraProvider;
+  @Nullable
+  private CameraProvider cameraProvider;
   private final SurfaceView surfaceView;
   private final ViewAttachmentManager viewAttachmentManager;
 

@@ -1,6 +1,7 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import com.google.ar.sceneform.collision.Box;
 import com.google.ar.sceneform.collision.CollisionShape;
 import com.google.ar.sceneform.collision.Sphere;
@@ -8,6 +9,7 @@ import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.schemas.sceneform.CollisionShapeType;
 import com.google.ar.schemas.sceneform.SceneformBundleDef;
 import com.google.ar.schemas.sceneform.SuggestedCollisionShapeDef;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
