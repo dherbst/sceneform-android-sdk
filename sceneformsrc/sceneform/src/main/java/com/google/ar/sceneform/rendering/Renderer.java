@@ -559,7 +559,7 @@ public class Renderer implements UiHelper.RendererCallback {
     view.setCamera(camera);
     view.setScene(scene);
 
-    setDynamicResolutionEnabled(true);
+    setDynamicResolutionEnabled(false);
 
     emptyView.setCamera(engine.createCamera());
     emptyView.setScene(engine.createScene());
