@@ -447,7 +447,7 @@ public class ViewRenderable extends Renderable {
                 .build()
                 .thenAccept(
                         material -> {
-
+                          material.setFloat("alpha", 1.0f);
                           ArrayList<Vertex> vertices = new ArrayList<>();
                           vertices.add(Vertex.builder()
                                   .setPosition(new Vector3(-0.5f, 0.0f, 0.0f))
