@@ -1,6 +1,8 @@
 package com.google.ar.sceneform.rendering;
 
 import android.net.Uri;
+import androidx.annotation.Nullable;
+import androidx.annotation.Size;
 import android.util.Log;
 
 import androidx.annotation.Nullable;

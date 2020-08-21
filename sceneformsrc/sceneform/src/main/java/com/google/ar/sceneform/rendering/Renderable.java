@@ -2,6 +2,9 @@ package com.google.ar.sceneform.rendering;
 
 import android.content.Context;
 import android.net.Uri;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
