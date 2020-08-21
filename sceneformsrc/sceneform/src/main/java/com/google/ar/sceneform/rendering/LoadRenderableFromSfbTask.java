@@ -153,7 +153,7 @@ class LoadRenderableFromSfbTask<T extends Renderable> {
     return result;
   }
 
-  
+
   private void loadAnimations(SceneformBundleDef sfb) {return ;}
 
 
@@ -268,7 +268,7 @@ class LoadRenderableFromSfbTask<T extends Renderable> {
     setupAnimation();
   }
 
-  
+
   private void setupAnimation() {return ;}
 
 

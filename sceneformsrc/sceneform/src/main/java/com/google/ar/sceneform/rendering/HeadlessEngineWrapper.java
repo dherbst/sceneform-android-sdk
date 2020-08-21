@@ -1,7 +1,6 @@
 package com.google.ar.sceneform.rendering;
 
 import androidx.annotation.NonNull;
-
 import com.google.android.filament.Engine;
 import com.google.android.filament.NativeSurface;
 import com.google.android.filament.SwapChain;

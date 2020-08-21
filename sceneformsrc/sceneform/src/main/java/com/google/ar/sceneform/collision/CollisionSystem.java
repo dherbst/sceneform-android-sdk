@@ -1,7 +1,6 @@
 package com.google.ar.sceneform.collision;
 
 import androidx.annotation.Nullable;
-
 import com.google.ar.sceneform.utilities.Preconditions;
 
 import java.util.ArrayList;

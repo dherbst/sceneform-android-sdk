@@ -2,6 +2,9 @@ package com.google.ar.sceneform;
 
 import android.content.Context;
 import android.media.Image;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.UiThread;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Display;
@@ -152,7 +155,7 @@ public class ArSceneView extends SceneView {
     session.setCameraTextureName(cameraTextureId);
   }
 
-  
+
   private void initializeFacingDirection(Session session) {
     if (session.getCameraConfig().getFacingDirection() == FacingDirection.FRONT) {
       Renderer renderer = Preconditions.checkNotNull(getRenderer());
@@ -160,29 +163,6 @@ public class ArSceneView extends SceneView {
     }
   }
 
-  
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-  
 
 
 
@@ -198,7 +178,30 @@ public class ArSceneView extends SceneView {
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -508,7 +511,7 @@ public class ArSceneView extends SceneView {
    *
    * @return true if the sunlight direction is updated every frame, false otherwise.
    */
-  
+
   public boolean isLightDirectionUpdateEnabled() {
     return isLightDirectionUpdateEnabled;
   }
@@ -522,7 +525,7 @@ public class ArSceneView extends SceneView {
    *
    * <p>The default state is true, with sunlight direction updated every frame.
    */
-  
+
   public void setLightDirectionUpdateEnabled(boolean isLightDirectionUpdateEnabled) {
     this.isLightDirectionUpdateEnabled = isLightDirectionUpdateEnabled;
   }
@@ -535,7 +538,7 @@ public class ArSceneView extends SceneView {
    * @return true if HDR lighting is enabled in Sceneform because ARCore HDR lighting estimation is
    *     enabled.
    */
-  
+
   public boolean isEnvironmentalHdrLightingAvailable() {
     if (cachedConfig == null) {
       return false;
@@ -548,13 +551,13 @@ public class ArSceneView extends SceneView {
    *
    * @hide
    */
-  
+
   public void captureLightingValues(
       Consumer<EnvironmentalHdrLightEstimate> onNextHdrLightingEstimate) {
     this.onNextHdrLightingEstimate = onNextHdrLightingEstimate;
   }
 
-  
+
   void updateHdrLightEstimate(
       LightEstimate estimate, Session session, com.google.ar.core.Camera camera) {
     if (estimate.getState() != LightEstimate.State.VALID) {
@@ -739,14 +742,14 @@ public class ArSceneView extends SceneView {
     }
   }
 
-  
+
 
 
   private static boolean loadUnifiedJni() {return false;}
 
 
 
-  
+
   private void reportEngineType() {return ;}
 
 

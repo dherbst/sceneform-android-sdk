@@ -3,10 +3,8 @@ package com.google.ar.sceneform.rendering;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Build;
-
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-
 import com.google.android.filament.MaterialInstance;
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.resources.ResourceRegistry;
@@ -42,7 +40,7 @@ public class Material {
     return new Material(this);
   }
 
-  
+
 
 
 
@@ -54,7 +52,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -66,7 +64,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -79,7 +77,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -92,7 +90,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -105,7 +103,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -117,7 +115,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -144,7 +142,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -164,7 +162,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -177,7 +175,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -189,7 +187,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -202,7 +200,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -215,7 +213,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -228,7 +226,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -271,7 +269,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -412,7 +410,7 @@ public class Material {
       return this;
     }
 
-    
+
 
 
 

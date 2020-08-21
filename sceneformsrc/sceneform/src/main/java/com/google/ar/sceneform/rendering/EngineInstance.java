@@ -1,9 +1,7 @@
 package com.google.ar.sceneform.rendering;
 
 import android.opengl.EGLContext;
-
 import androidx.annotation.Nullable;
-
 import com.google.android.filament.Engine;
 import com.google.android.filament.Filament;
 import com.google.android.filament.gltfio.Gltfio;
@@ -50,7 +48,7 @@ public class EngineInstance {
     return engine;
   }
 
-  
+
   private static Engine createSharedFilamentEngine() {return null;}
 
 
@@ -68,7 +66,7 @@ public class EngineInstance {
     return result;
   }
 
-  
+
   private static boolean destroySharedFilamentEngine() {return false;}
 
 
@@ -87,12 +85,12 @@ public class EngineInstance {
     }
   }
 
-  
+
   private static boolean loadUnifiedJni() {return false;}
 
 
 
-  
+
   private static void gltfioInit() {
     Gltfio.init();
     filamentInitialized = true;

@@ -281,7 +281,7 @@ public class LightProbe {
    *
    * @hide intended for use by other Sceneform packages which update Hdr lighting every frame.
    */
-  
+
   public void setEnvironmentalHdrSphericalHarmonics(
       float[] sphericalHarmonics,
       float exposure,

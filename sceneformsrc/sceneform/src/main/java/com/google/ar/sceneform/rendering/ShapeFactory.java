@@ -1,10 +1,8 @@
 package com.google.ar.sceneform.rendering;
 
 import android.os.Build;
-
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.RenderableDefinition.Submesh;
 import com.google.ar.sceneform.rendering.Vertex.UvCoordinate;

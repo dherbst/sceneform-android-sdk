@@ -1,7 +1,6 @@
 package com.google.ar.sceneform;
 
 import androidx.annotation.Nullable;
-
 import com.google.ar.sceneform.collision.RayHit;
 
 /**

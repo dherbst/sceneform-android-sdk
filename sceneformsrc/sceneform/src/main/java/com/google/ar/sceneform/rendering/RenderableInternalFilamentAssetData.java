@@ -2,10 +2,8 @@ package com.google.ar.sceneform.rendering;
 
 import android.content.Context;
 import android.net.Uri;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
 import com.google.android.filament.IndexBuffer;
 import com.google.android.filament.VertexBuffer;
 import com.google.android.filament.gltfio.MaterialProvider;
@@ -195,13 +193,6 @@ public class RenderableInternalFilamentAssetData implements IRenderableInternalD
     return new ArrayList<>();
   }
 
-  
-
-
-
-
-
-  
 
 
 
@@ -209,7 +200,14 @@ public class RenderableInternalFilamentAssetData implements IRenderableInternalD
 
 
 
-  
+
+
+
+
+
+
+
+
 
 
 

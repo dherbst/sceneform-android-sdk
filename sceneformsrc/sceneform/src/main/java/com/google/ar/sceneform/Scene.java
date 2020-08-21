@@ -419,7 +419,7 @@ public class Scene extends NodeParent {
    *
    * @hide intended for use by other Sceneform packages which update Hdr lighting every frame.
    */
-  
+
   public void setUseHdrLightEstimate(boolean useHdrLightEstimate) {
     if (view != null) {
       Renderer renderer = Preconditions.checkNotNull(view.getRenderer());
@@ -434,7 +434,7 @@ public class Scene extends NodeParent {
    */
   // incompatible types in argument.
   @SuppressWarnings("nullness:argument.type.incompatible")
-  
+
   public void setEnvironmentalHdrLightEstimate(
       @Nullable float[] sphericalHarmonics,
       @Nullable float[] direction,

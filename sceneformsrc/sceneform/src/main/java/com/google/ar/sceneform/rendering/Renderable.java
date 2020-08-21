@@ -2,6 +2,9 @@ package com.google.ar.sceneform.rendering;
 
 import android.content.Context;
 import android.net.Uri;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
@@ -273,19 +276,19 @@ public abstract class Renderable {
             + ").");
   }
 
-  
+
   private IRenderableInternalData createRenderableInternalGltfData() {return null;}
 
 
 
   // TODO: Gltf animation api should be consistent with Sceneform.
-  
+
 
 
 
 
   // TODO: Gltf animation api should be consistent with Sceneform.
-  
+
 
 
 
@@ -326,7 +329,7 @@ public abstract class Renderable {
       return setRemoteSourceHelper(context, sourceUri, true);
     }
 
-    
+
     public B setSource(Context context, Uri sourceUri, boolean enableCaching) {return null;}
 
 
@@ -354,7 +357,7 @@ public abstract class Renderable {
       return getSelf();
     }
 
-    
+
 
 
 
@@ -367,7 +370,7 @@ public abstract class Renderable {
       return getSelf();
     }
 
-    
+
 
 
 
@@ -492,7 +495,7 @@ public abstract class Renderable {
       return getSelf();
     }
 
-    
+
     private CompletableFuture<T> loadRenderableFromGltf(
             @NonNull Context context, T renderable, @Nullable byte[] materialsBytes) {return null;}
 
@@ -510,7 +513,7 @@ public abstract class Renderable {
       return loader.downloadAndProcessRenderable(Preconditions.checkNotNull(inputStreamCreator));
     }
 
-    
+
     private void setCachingEnabled(Context context) {return ;}
 
 

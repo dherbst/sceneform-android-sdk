@@ -1,6 +1,5 @@
 package com.google.ar.sceneform.rendering;
 
-
 import androidx.annotation.Nullable;
 
 import com.google.ar.sceneform.resources.ResourceHolder;
@@ -25,7 +24,7 @@ public class ResourceManager {
   private final ResourceRegistry<ModelRenderable> modelRenderableRegistry =
       new ResourceRegistry<>();
 
-  
+
   private final ResourceRegistry<ViewRenderable> viewRenderableRegistry = new ResourceRegistry<>();
 
   private final CleanupRegistry<CameraStream> cameraStreamCleanupRegistry = new CleanupRegistry<>();
@@ -48,7 +47,7 @@ public class ResourceManager {
     return modelRenderableRegistry;
   }
 
-  
+
   ResourceRegistry<ViewRenderable> getViewRenderableRegistry() {
     return viewRenderableRegistry;
   }
@@ -112,7 +111,7 @@ public class ResourceManager {
     addResourceHolder(textureCleanupRegistry);
   }
 
-  
+
   private void addViewRenderableRegistry() {
     addResourceHolder(viewRenderableRegistry);
   }

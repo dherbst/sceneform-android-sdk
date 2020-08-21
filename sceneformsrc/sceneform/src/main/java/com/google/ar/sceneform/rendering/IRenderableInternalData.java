@@ -2,7 +2,6 @@ package com.google.ar.sceneform.rendering;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
 import com.google.android.filament.Entity;
 import com.google.android.filament.IndexBuffer;
 import com.google.android.filament.VertexBuffer;
@@ -79,14 +78,14 @@ interface IRenderableInternalData {
   @NonNull
   List<String> getAnimationNames();
 
-  
-
-
-  
 
 
 
-  
+
+
+
+
+
 
 
   void buildInstanceData(Renderable renderable, @Entity int renderedEntity);

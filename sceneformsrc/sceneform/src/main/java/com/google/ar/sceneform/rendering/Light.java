@@ -1,9 +1,7 @@
 package com.google.ar.sceneform.rendering;
 
 import android.os.Build;
-
 import androidx.annotation.RequiresApi;
-
 import com.google.android.filament.Colors;
 import com.google.ar.sceneform.common.TransformProvider;
 import com.google.ar.sceneform.math.Vector3;

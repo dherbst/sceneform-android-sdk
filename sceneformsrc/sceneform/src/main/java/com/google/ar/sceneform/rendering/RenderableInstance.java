@@ -1,6 +1,8 @@
 package com.google.ar.sceneform.rendering;
 
 import android.net.Uri;
+import androidx.annotation.Nullable;
+import androidx.annotation.Size;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
@@ -67,11 +69,11 @@ public class RenderableInstance {
   @Entity private int childEntity = 0;
   int renderableId = ChangeId.EMPTY_ID;
 
-  
 
 
 
-  
+
+
   @Nullable
   FilamentAsset filamentAsset;
 
@@ -107,7 +109,7 @@ public class RenderableInstance {
         .register(this, new CleanupCallback(entity, childEntity));
   }
 
-  
+
   void createFilamentAssetModelInstance() {
     if (renderable.getRenderableData() instanceof RenderableInternalFilamentAssetData) {
       RenderableInternalFilamentAssetData renderableData =
@@ -167,7 +169,7 @@ public class RenderableInstance {
     }
   }
 
-  
+
   void createGltfModelInstance() {return ;}
 
 
@@ -197,14 +199,14 @@ public class RenderableInstance {
 
 
 
-  
+
 
 
 
 
 
   @Nullable
-  
+
   public FilamentAsset getFilamentAsset() {
     return filamentAsset;
   }
@@ -242,7 +244,6 @@ public class RenderableInstance {
     this.skinningModifier = skinningModifier;
   }
 
-  
 
 
 
@@ -258,7 +259,8 @@ public class RenderableInstance {
 
 
 
-  
+
+
   private void setupSkeleton(IRenderableInternalData renderableInternalData) {return ;}
 
 
@@ -283,7 +285,7 @@ public class RenderableInstance {
     }
   }
 
-  
+
   private void attachFilamentAssetToRenderer() {
     FilamentAsset currentFilamentAsset = filamentAsset;
     if (currentFilamentAsset != null) {
@@ -303,7 +305,7 @@ public class RenderableInstance {
     attachFilamentAssetToRenderer();
   }
 
-  
+
   void detachFilamentAssetFromRenderer() {
     FilamentAsset currentFilamentAsset = filamentAsset;
     if (currentFilamentAsset != null) {
@@ -373,7 +375,7 @@ public class RenderableInstance {
     return cachedRelativeTransformInverse;
   }
 
-  
+
   private void updateSkinning(boolean force) {return ;}
 
 
