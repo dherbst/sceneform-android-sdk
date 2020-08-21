@@ -1263,7 +1263,7 @@ public class Node extends NodeParent implements TransformProvider {
     return onTouchEvent(hitTestResult, motionEvent);
   }
 
-  
+
   private boolean dispatchToViewRenderable(MotionEvent motionEvent) {
     return ViewTouchHelpers.dispatchTouchEventToView(this, motionEvent);
   }
@@ -1285,7 +1285,7 @@ public class Node extends NodeParent implements TransformProvider {
     updateActiveStatusRecursively();
   }
 
-  
+
 
 
 

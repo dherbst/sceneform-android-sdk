@@ -2,7 +2,6 @@ package com.google.ar.sceneform.resources;
 
 import androidx.annotation.GuardedBy;
 import androidx.annotation.Nullable;
-
 import com.google.ar.sceneform.utilities.Preconditions;
 
 import java.lang.ref.WeakReference;

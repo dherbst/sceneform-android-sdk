@@ -36,7 +36,7 @@ public class SceneView extends SurfaceView implements Choreographer.FrameCallbac
 
   @Nullable private Color backgroundColor;
 
-  
+
 
 
 
@@ -184,7 +184,7 @@ public class SceneView extends SurfaceView implements Choreographer.FrameCallbac
    * <p>Use this if nothing more will be rendered in this scene or any other, and the memory must be
    * released immediately.
    */
-  
+
   public static void destroyAllResources() {
     Renderer.destroyAllResources();
   }
@@ -197,7 +197,7 @@ public class SceneView extends SurfaceView implements Choreographer.FrameCallbac
    *
    * @return Count of resources currently in use
    */
-  
+
   public static long reclaimReleasedResources() {
     return Renderer.reclaimReleasedResources();
   }
@@ -363,7 +363,6 @@ public class SceneView extends SurfaceView implements Choreographer.FrameCallbac
     }
   }
 
-  
 
 
 
@@ -380,7 +379,8 @@ public class SceneView extends SurfaceView implements Choreographer.FrameCallbac
 
 
 
-  
+
+
   private void updateAnimation(long frameTimeNanos) {return ;}
 
 
@@ -405,7 +405,7 @@ public class SceneView extends SurfaceView implements Choreographer.FrameCallbac
     }
   }
 
-  
+
   private void initializeAnimation() {return ;}
 
 

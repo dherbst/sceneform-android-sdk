@@ -3,7 +3,6 @@ package com.google.ar.sceneform.rendering;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Build;
-
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
@@ -42,7 +41,7 @@ public class Material {
     return new Material(this);
   }
 
-  
+
 
 
 
@@ -54,7 +53,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -66,7 +65,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -79,7 +78,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -92,7 +91,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -105,7 +104,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -117,7 +116,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -144,7 +143,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -164,7 +163,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -177,7 +176,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -189,7 +188,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -202,7 +201,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -215,7 +214,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -228,7 +227,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -271,7 +270,7 @@ public class Material {
     }
   }
 
-  
+
 
 
 
@@ -412,7 +411,7 @@ public class Material {
       return this;
     }
 
-    
+
 
 
 

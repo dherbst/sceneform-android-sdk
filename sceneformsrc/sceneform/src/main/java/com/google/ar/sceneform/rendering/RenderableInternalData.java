@@ -60,7 +60,7 @@ class RenderableInternalData implements IRenderableInternalData {
   // Represents the set of meshes to render.
   private final ArrayList<MeshData> meshes = new ArrayList<>();
 
-  
+
 
 
 
@@ -191,7 +191,7 @@ class RenderableInternalData implements IRenderableInternalData {
     return rawColorBuffer;
   }
 
-  
+
   private void setupSkeleton(RenderableManager.Builder builder) {return ;}
 
 
@@ -280,18 +280,18 @@ class RenderableInternalData implements IRenderableInternalData {
     return Collections.emptyList();
   }
 
-  
-
-
-
-  
 
 
 
 
 
 
-  
+
+
+
+
+
+
 
 
 

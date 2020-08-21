@@ -1,6 +1,5 @@
 package com.google.ar.sceneform.utilities;
 
-
 import androidx.annotation.Nullable;
 
 /**

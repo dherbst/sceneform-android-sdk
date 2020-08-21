@@ -5,7 +5,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
-
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import com.google.android.filament.android.TextureHelper;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
@@ -426,7 +428,7 @@ public class Texture {
     private final WrapMode wrapModeT;
     private final WrapMode wrapModeR;
 
-    
+
 
 
 

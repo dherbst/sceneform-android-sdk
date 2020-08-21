@@ -2,7 +2,6 @@ package com.google.ar.sceneform.rendering;
 
 import android.content.Context;
 import android.os.Build;
-
 import androidx.annotation.RequiresApi;
 
 import java.util.concurrent.CompletableFuture;

@@ -1,6 +1,5 @@
 package com.google.ar.sceneform;
 
-
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
@@ -63,7 +62,7 @@ public class Sun extends Node {
    * @param exposure Exposure value from Filament.
    * @hide intended for use by other Sceneform packages which update Hdr lighting every frame.
    */
-  
+
   void setEnvironmentalHdrLightEstimate(
       float[] direction,
       Color color,

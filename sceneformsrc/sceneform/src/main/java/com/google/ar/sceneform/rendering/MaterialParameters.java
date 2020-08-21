@@ -1,7 +1,6 @@
 package com.google.ar.sceneform.rendering;
 
 import androidx.annotation.Nullable;
-
 import com.google.android.filament.MaterialInstance;
 import com.google.android.filament.TextureSampler;
 import com.google.ar.core.annotations.UsedByNative;
@@ -14,7 +13,7 @@ import java.util.HashMap;
 final class MaterialParameters {
   private final HashMap<String, MaterialParameters.Parameter> namedParameters = new HashMap<>();
 
-  
+
 
 
 

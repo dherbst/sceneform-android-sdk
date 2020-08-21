@@ -175,7 +175,7 @@ public class Renderer implements UiHelper.RendererCallback {
    *
    * @hide Used internally by ArSceneView
    */
-  
+
   public void setFrontFaceWindingInverted(Boolean inverted) {
     view.setFrontFaceWindingInverted(inverted);
   }
@@ -185,7 +185,7 @@ public class Renderer implements UiHelper.RendererCallback {
    *
    * @hide Used internally by ViewRenderable
    */
-  
+
   public boolean isFrontFaceWindingInverted() {
     return view.isFrontFaceWindingInverted();
   }
@@ -435,13 +435,13 @@ public class Renderer implements UiHelper.RendererCallback {
   }
 
   /** @hide Used internally by ArSceneView. */
-  
+
   public void setPostProcessingEnabled(boolean enablePostProcessing) {return ;}
 
 
 
   /** @hide Used internally by ArSceneView */
-  
+
   public void setRenderQuality(com.google.android.filament.View.RenderQuality renderQuality) {return ;}
 
 
@@ -452,7 +452,7 @@ public class Renderer implements UiHelper.RendererCallback {
    *
    * @hide Used internally by ArSceneView
    */
-  
+
   public void enablePerformanceMode() {return ;}
 
 
@@ -502,14 +502,14 @@ public class Renderer implements UiHelper.RendererCallback {
     lightInstances.remove(instance);
   }
 
-  
+
   private void addModelInstanceInternal(RenderableInstance instance) {return ;}
 
 
 
 
 
-  
+
   private void removeModelInstanceInternal(RenderableInstance instance) {return ;}
 
 
@@ -584,7 +584,7 @@ public class Renderer implements UiHelper.RendererCallback {
    *
    * @hide This is support deeplight API which is not stable yet.
    */
-  
+
   public float getExposure() {
     float e = (cameraAperature * cameraAperature) / cameraShutterSpeed * 100.0f / cameraIso;
     return 1.0f / (1.2f * e);

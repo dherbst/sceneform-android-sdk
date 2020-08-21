@@ -120,7 +120,7 @@ public class Camera extends Node implements CameraProvider {
    *
    * @throws UnsupportedOperationException if this is an AR camera
    */
-  
+
   public void setVerticalFovDegrees(float verticalFov) {
     this.verticalFov = verticalFov;
 
@@ -143,7 +143,7 @@ public class Camera extends Node implements CameraProvider {
    *
    * @throws IllegalStateException if called before the first frame after ARCore is resumed
    */
-  
+
   public float getVerticalFovDegrees() {
     if (isArCamera) {
       if (areMatricesInitialized) {

@@ -1,10 +1,8 @@
 package com.google.ar.sceneform;
 
 import android.annotation.TargetApi;
-
 import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
-
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
