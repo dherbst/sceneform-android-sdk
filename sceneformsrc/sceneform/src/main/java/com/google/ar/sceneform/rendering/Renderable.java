@@ -2,10 +2,10 @@ package com.google.ar.sceneform.rendering;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.google.ar.sceneform.collision.Box;
 import com.google.ar.sceneform.collision.CollisionShape;
@@ -16,10 +16,10 @@ import com.google.ar.sceneform.utilities.AndroidPreconditions;
 import com.google.ar.sceneform.utilities.ChangeId;
 import com.google.ar.sceneform.utilities.LoadHelper;
 import com.google.ar.sceneform.utilities.Preconditions;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
-
 import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
@@ -41,7 +41,8 @@ public abstract class Renderable {
   private int renderPriority = RENDER_PRIORITY_DEFAULT;
   private boolean isShadowCaster = true;
   private boolean isShadowReceiver = true;
-  @Nullable protected CollisionShape collisionShape;
+  @Nullable
+  protected CollisionShape collisionShape;
 
   private final ChangeId changeId = new ChangeId();
 
@@ -493,7 +494,7 @@ public abstract class Renderable {
 
     
     private CompletableFuture<T> loadRenderableFromGltf(
-        @NonNull Context context, T renderable, @Nullable byte[] materialsBytes) {return null;}
+            @NonNull Context context, T renderable, @Nullable byte[] materialsBytes) {return null;}
 
 
 

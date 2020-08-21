@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Choreographer;
@@ -12,9 +11,9 @@ import android.view.MotionEvent;
 import android.view.Surface;
 import android.view.SurfaceView;
 
+import androidx.annotation.Nullable;
+
 import com.google.ar.core.exceptions.CameraNotAvailableException;
-
-
 import com.google.ar.sceneform.rendering.Color;
 import com.google.ar.sceneform.rendering.Renderer;
 import com.google.ar.sceneform.utilities.AndroidPreconditions;
@@ -26,7 +25,8 @@ import com.google.ar.sceneform.utilities.Preconditions;
 public class SceneView extends SurfaceView implements Choreographer.FrameCallback {
   private static final String TAG = SceneView.class.getSimpleName();
 
-  @Nullable private Renderer renderer = null;
+  @Nullable
+  private Renderer renderer = null;
   private final FrameTime frameTime = new FrameTime();
 
   private Scene scene;

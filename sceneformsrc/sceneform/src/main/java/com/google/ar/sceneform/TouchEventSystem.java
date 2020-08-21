@@ -1,9 +1,12 @@
 package com.google.ar.sceneform;
 
-import android.support.annotation.Nullable;
 import android.view.MotionEvent;
+
+import androidx.annotation.Nullable;
+
 import com.google.ar.sceneform.Scene.OnPeekTouchListener;
 import com.google.ar.sceneform.utilities.Preconditions;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -49,7 +52,8 @@ public class TouchEventSystem {
     public int pointerIdBits;
 
     // The next target in the target list.
-    @Nullable public TouchTarget next;
+    @Nullable
+    public TouchTarget next;
   }
 
   @Nullable private Scene.OnTouchListener onTouchListener;
