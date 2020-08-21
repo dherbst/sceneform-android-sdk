@@ -1,10 +1,11 @@
 package com.google.ar.sceneform;
 
-import android.support.annotation.Nullable;
-import android.support.annotation.VisibleForTesting;
 import android.view.MotionEvent;
-import com.google.ar.core.Pose;
 
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
+
+import com.google.ar.core.Pose;
 import com.google.ar.sceneform.collision.Ray;
 import com.google.ar.sceneform.math.MathHelper;
 import com.google.ar.sceneform.math.Matrix;

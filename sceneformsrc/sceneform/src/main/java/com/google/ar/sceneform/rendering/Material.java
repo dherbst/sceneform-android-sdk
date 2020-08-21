@@ -3,17 +3,18 @@ package com.google.ar.sceneform.rendering;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+
 import com.google.android.filament.MaterialInstance;
-
-
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.resources.ResourceRegistry;
 import com.google.ar.sceneform.utilities.AndroidPreconditions;
 import com.google.ar.sceneform.utilities.LoadHelper;
 import com.google.ar.sceneform.utilities.Preconditions;
 import com.google.ar.sceneform.utilities.SceneformBufferUtils;
+
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.concurrent.Callable;
@@ -26,7 +27,8 @@ public class Material {
   private static final String TAG = Material.class.getSimpleName();
 
   private final MaterialParameters materialParameters = new MaterialParameters();
-  @Nullable private final MaterialInternalData materialData;
+  @Nullable
+  private final MaterialInternalData materialData;
   private final IMaterialInstance internalMaterialInstance;
 
   /**

@@ -1,12 +1,14 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import com.google.ar.core.Plane;
 import com.google.ar.core.TrackingState;
 import com.google.ar.sceneform.common.TransformProvider;
 import com.google.ar.sceneform.math.Matrix;
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.RenderableDefinition.Submesh;
+
 import java.nio.FloatBuffer;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +28,8 @@ class PlaneVisualizer implements TransformProvider {
   private boolean isShadowReceiver = false;
   private boolean isVisible = false;
 
-  @Nullable private ModelRenderable planeRenderable = null;
+  @Nullable
+  private ModelRenderable planeRenderable = null;
   @Nullable private RenderableInstance planeRenderableInstance;
 
   private final ArrayList<Vertex> vertices = new ArrayList<>();

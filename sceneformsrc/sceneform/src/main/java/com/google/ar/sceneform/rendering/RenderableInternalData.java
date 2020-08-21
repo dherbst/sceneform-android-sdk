@@ -1,18 +1,19 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.Box;
 import com.google.android.filament.Entity;
 import com.google.android.filament.EntityInstance;
 import com.google.android.filament.IndexBuffer;
 import com.google.android.filament.RenderableManager;
 import com.google.android.filament.VertexBuffer;
-
-
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.utilities.AndroidPreconditions;
+
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;
@@ -45,7 +46,8 @@ class RenderableInternalData implements IRenderableInternalData {
   private final Vector3 transformOffset = Vector3.zero();
 
   // Raw buffers.
-  @Nullable private IntBuffer rawIndexBuffer;
+  @Nullable
+  private IntBuffer rawIndexBuffer;
   @Nullable private FloatBuffer rawPositionBuffer;
   @Nullable private FloatBuffer rawTangentsBuffer;
   @Nullable private FloatBuffer rawUvBuffer;

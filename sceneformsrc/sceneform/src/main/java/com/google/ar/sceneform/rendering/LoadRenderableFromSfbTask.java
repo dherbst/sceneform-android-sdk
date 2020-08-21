@@ -1,12 +1,13 @@
 package com.google.ar.sceneform.rendering;
 
 import android.net.Uri;
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.IndexBuffer;
 import com.google.android.filament.TextureSampler;
 import com.google.android.filament.VertexBuffer;
-
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.SceneformBundle.VersionException;
 import com.google.ar.sceneform.utilities.Preconditions;
@@ -14,7 +15,6 @@ import com.google.ar.sceneform.utilities.SceneformBufferUtils;
 import com.google.ar.schemas.lull.ModelDef;
 import com.google.ar.schemas.lull.ModelIndexRange;
 import com.google.ar.schemas.lull.ModelInstanceDef;
-
 import com.google.ar.schemas.lull.Vec3;
 import com.google.ar.schemas.lull.VertexAttribute;
 import com.google.ar.schemas.lull.VertexAttributeType;
@@ -39,6 +39,7 @@ import com.google.ar.schemas.sceneform.TransformDef;
 import com.google.ar.schemas.sceneform.Vec2Init;
 import com.google.ar.schemas.sceneform.Vec3Init;
 import com.google.ar.schemas.sceneform.Vec4Init;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -54,7 +55,8 @@ import java.util.concurrent.CompletionException;
 class LoadRenderableFromSfbTask<T extends Renderable> {
   private static class ModelTexture {
     String name;
-    @Nullable Texture data;
+    @Nullable
+    Texture data;
 
     ModelTexture(String name) {
       this.name = name;

@@ -2,23 +2,22 @@ package com.google.ar.sceneform.rendering;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.IndexBuffer;
 import com.google.android.filament.VertexBuffer;
 import com.google.android.filament.gltfio.MaterialProvider;
 import com.google.android.filament.gltfio.ResourceLoader;
-
-
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.RenderableInternalData.MeshData;
+
 import java.nio.Buffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;
-
 import java.util.List;
-
 import java.util.function.Function;
 
 /** Represents the data used by a {@link Renderable} for rendering natively loaded glTF data. */
@@ -29,7 +28,8 @@ public class RenderableInternalFilamentAssetData implements IRenderableInternalD
   Buffer gltfByteBuffer;
   boolean isGltfBinary;
   ResourceLoader resourceLoader;
-  @Nullable Function<String, Uri> urlResolver;
+  @Nullable
+  Function<String, Uri> urlResolver;
   static MaterialProvider materialProvider;
 
   static MaterialProvider getMaterialProvider() {

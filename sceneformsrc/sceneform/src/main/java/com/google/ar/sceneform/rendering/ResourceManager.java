@@ -1,9 +1,11 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.google.ar.sceneform.resources.ResourceHolder;
 import com.google.ar.sceneform.resources.ResourceRegistry;
+
 import java.util.ArrayList;
 
 /**
@@ -14,7 +16,8 @@ import java.util.ArrayList;
  */
 @SuppressWarnings("initialization") // Suppress @UnderInitialization warning.
 public class ResourceManager {
-  @Nullable private static ResourceManager instance = null;
+  @Nullable
+  private static ResourceManager instance = null;
 
   private final ArrayList<ResourceHolder> resourceHolders = new ArrayList<>();
   private final ResourceRegistry<Texture> textureRegistry = new ResourceRegistry<>();

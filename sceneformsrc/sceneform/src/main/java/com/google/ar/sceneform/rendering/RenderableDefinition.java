@@ -1,6 +1,7 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.IndexBuffer;
 import com.google.android.filament.IndexBuffer.Builder.IndexType;
 import com.google.android.filament.VertexBuffer;
@@ -12,6 +13,7 @@ import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.Vertex.UvCoordinate;
 import com.google.ar.sceneform.utilities.AndroidPreconditions;
 import com.google.ar.sceneform.utilities.Preconditions;
+
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;
@@ -35,7 +37,8 @@ public class RenderableDefinition {
   public static class Submesh {
     private List<Integer> triangleIndices;
     private Material material;
-    @Nullable private String name;
+    @Nullable
+    private String name;
 
     public void setTriangleIndices(List<Integer> triangleIndices) {
       this.triangleIndices = triangleIndices;
