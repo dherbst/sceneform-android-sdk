@@ -1,8 +1,3 @@
-# Status: Archived
-This repository has been archived and is no longer maintained.
-
-![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
-
 Sceneform SDK for Android
 =========================
 Copyright (c) 2018 Google Inc.  All rights reserved.
